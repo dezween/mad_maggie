@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: #e6e1d9;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.menu {
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-link {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: #e6e1d9;
+}
+
+.header {
+    width: 100%;
+    margin-top: 50px;
+}
+
+video {
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+    margin-top: -5px;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    background: #e6e1d9;
+}
+
+.info-character,
+.info-desc,
+.info-addintional {
+    width: 33%;
+    color: #4a4946;
+}
+
+
+.character-img {
+    width: 100%;
+}
+
+.info-addintional {
+    background: #000;
+    color: #e6e1d9;
+    padding: 50px;
+}
+
+.info-title {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.info-desc {
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-ad-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    margin-bottom: 30px;
+}
+
+.list-item span {
+    font-weight: 900;
+}
+
+.abilities {
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    background: url("img/3rd-section-bg.jpg") center/cover no-repeat;
+}
+
+.abilities-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.abilities-title {
+    color: rgb(200, 20, 20);
+    font-weight: normal;
+}
+
+.abilities-card {
+    width: 33%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.abilities-img {
+    width: 100%;
+}
+
+.abilities-card h2,
+.abilities-card p,
+.abilities-card ul {
+    width: 50%;
+    list-style: none;
+}
+
+.abilities-card p,
+.abilities-card ul {
+    text-align: center;
+}
+
+.abilities-item {
+    margin-top: 20px;
+}
+
+.abilities-card h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.youtube-video {
+    width: 100%;
+    padding: 50px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+}
+
+.characters {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.characters-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.characters-card {
+    width: 33%;
+}
+
+.characters-card p {
+    margin-top: 20px;
+}
+
+.characters-img {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background: #000;
+    padding: 150px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-img {
+    height: 100px;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+
+        flex-direction: column;
+    }
+
+    .info-content {
+        flex-direction: column;
+    }
+
+    .info-character,
+    .info-desc,
+    .info-addintional {
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .abilities-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .abilities-card h2,
+    .abilities-card p,
+    .abilities-card ul {
+        width: 100%;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .characters-content{
+        flex-direction: column;
+    }
+    .characters-card{
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        height: 500px;
+    }
+}
